@@ -1,0 +1,38 @@
+https://www.youtube.com/watch?v=TkuO8OLgvkk
+
+-------------------------------------------
+   Navigator.push(context,
+                        MaterialPageRoute(builder: (context) => Userpage()));
+
+
+
+------------------------------
+
+StreamBuilder<User?>(
+                    stream: FirebaseAuth.instance.authStateChanges(),
+                    builder: (context, snapshot) {
+                      if (snapshot.hasData) {
+                        print("Userpage");
+                        return Userpage();
+                      } else {
+                        print("Samepage");
+                        return Userpage();
+                      }
+                    },
+                  );
+
+------------------------------
+
+       child: Container(
+          //Background Gradient
+          decoration: BoxDecoration(
+            gradient: LinearGradient(colors: [
+              Color.fromARGB(255, 205, 243, 170),
+              Color.fromARGB(255, 213, 236, 211)
+            ], begin: Alignment.topCenter, end: Alignment.bottomCenter),
+          ),
+        ),
+
+
+
+
