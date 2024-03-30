@@ -1,4 +1,4 @@
-#My Flutter Learning App
+My Flutter Learning App
 
 Welcome to the repository for my first Flutter app! This project is designed for my personal learning journey to explore Flutter and Dart.
 Features
